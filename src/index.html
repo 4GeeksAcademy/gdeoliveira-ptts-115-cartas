@@ -1,35 +1,64 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/img/4geeks.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello Rigo with Vanilla.js</title>
+
+  <!-- Fontawesome is our recomended library for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- Write your HTML code here, you can delete everything withing the body tags -->
+  <!--div de la carta general -->
+  <div class="container">
+
+    <div class="top">
+      <!--div de arriba a la izquierda-->
+      <div id="cartTop" class="general">
+
+        <!--div del numero-->
+        <div id="numberTop" class="letra"></div>
+
+        <!--div del palo-->
+        <div id="suitTop" class="suitGeneral"></div>
+
       </div>
     </div>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
+    <div class="center">
+      <!--div de la letra-->
+      <div id="generalValue">
+        <h1 class="letraGeneral" id="value"></h1>
+      </div>
+
+    </div>
+
+    <div class="bottom">
+      <!--div del simbolo de abajao invertido-->
+      <div id="cartBottom" class="general">
+
+        <!--div del numero-->
+        <div id="numberBottom" class="letra"></div>
+
+        <!--div del palo-->
+        <div id="suitBottom" class="suitGeneral"></div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="boton">
+    <button id="miBoton"> Generar otra carta </button>
+  </div>
+  <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
+  <script type="module" src="/app.js"></script>
+</body>
+
 </html>
